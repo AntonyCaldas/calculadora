@@ -24,13 +24,43 @@ public class MenuPrincipalController implements Initializable {
     private TextField txtNumero1, txtNumero2, txtResultado;
     
     @FXML
-    private Button btnSoma;
+    private Button btnSoma, btnSubtracao, btnMultiplicacao, btnDivisao;
     
     @FXML
     private void soma(ActionEvent event) {
         Double num1 = Double.parseDouble(txtNumero1.getText());
         Double num2 = Double.parseDouble(txtNumero2.getText());
         Double resultado = num1 + num2;
+        
+        txtResultado.setText(resultado.toString());
+
+    }
+    
+    @FXML
+    private void subtracao(ActionEvent event) {
+        Double num1 = Double.parseDouble(txtNumero1.getText());
+        Double num2 = Double.parseDouble(txtNumero2.getText());
+        Double resultado = num1 - num2;
+        
+        txtResultado.setText(resultado.toString());
+
+    }
+    
+    @FXML
+    private void multiplicacao(ActionEvent event) {
+        Double num1 = Double.parseDouble(txtNumero1.getText());
+        Double num2 = Double.parseDouble(txtNumero2.getText());
+        Double resultado = num1 * num2;
+        
+        txtResultado.setText(resultado.toString());
+
+    }
+    
+    @FXML
+    private void divisao(ActionEvent event) {
+        Double num1 = Double.parseDouble(txtNumero1.getText());
+        Double num2 = Double.parseDouble(txtNumero2.getText());
+        Double resultado = num1 / num2;
         
         txtResultado.setText(resultado.toString());
 

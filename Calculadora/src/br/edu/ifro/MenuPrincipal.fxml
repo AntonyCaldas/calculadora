@@ -1,20 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="226.0" prefWidth="367.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.edu.ifro.MenuPrincipalController">
+<AnchorPane id="AnchorPane" prefHeight="226.0" prefWidth="367.0" style="-fx-background-color: #99ffcc;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.MenuPrincipalController">
     <children>
         <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
-      <Button fx:id="btnSoma" layoutX="260.0" layoutY="30.0" mnemonicParsing="false" onAction="#soma" text="Soma" />
-      <TextField fx:id="txtNumero1" layoutX="21.0" layoutY="30.0" />
-      <TextField fx:id="txtNumero2" layoutX="21.0" layoutY="88.0" />
-      <TextField fx:id="txtResultado" layoutX="21.0" layoutY="146.0" />
-      <Label layoutX="21.0" layoutY="14.0" text="Primeiro Valor" />
-      <Label layoutX="21.0" layoutY="71.0" text="Segundo Valor" />
-      <Label layoutX="21.0" layoutY="129.0" text="Resultado" />
+      <Button fx:id="btnSoma" layoutX="233.0" layoutY="60.0" mnemonicParsing="false" onAction="#soma" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: transparent; -fx-border-color: black;" text="+" />
+      <TextField fx:id="txtNumero1" layoutX="21.0" layoutY="60.0" style="-fx-border-color: black; -fx-background-color: transparent;" />
+      <TextField fx:id="txtNumero2" layoutX="21.0" layoutY="116.0" style="-fx-border-color: black; -fx-background-color: transparent;" />
+      <TextField fx:id="txtResultado" layoutX="21.0" layoutY="171.0" style="-fx-border-color: black; -fx-background-color: transparent;" />
+      <Label layoutX="22.0" layoutY="43.0" text="Primeiro Valor">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font></Label>
+      <Label layoutX="20.0" layoutY="99.0" text="Segundo Valor" />
+      <Label layoutX="21.0" layoutY="154.0" text="Resultado" />
+      <Label layoutX="152.0" layoutY="14.0" text="Calculadora">
+         <font>
+            <Font name="Arial" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnSubtracao" layoutX="306.0" layoutY="60.0" mnemonicParsing="false" onAction="#subtracao" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: transparent; -fx-border-color: black;" text="-" />
+      <Button fx:id="btnMutiplicacao" layoutX="233.0" layoutY="116.0" mnemonicParsing="false" onAction="#multiplicacao" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: transparent; -fx-border-color: black;" text="X" />
+      <Button fx:id="btnDivisao" layoutX="306.0" layoutY="116.0" mnemonicParsing="false" onAction="#divisao" prefHeight="25.0" prefWidth="29.0" style="-fx-background-color: transparent; -fx-border-color: black;" text="/" />
     </children>
 </AnchorPane>
