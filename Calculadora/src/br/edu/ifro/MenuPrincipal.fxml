@@ -10,11 +10,6 @@
 
 <AnchorPane id="AnchorPane" prefHeight="336.0" prefWidth="490.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.MenuPrincipalController">
     <children>
-      <ImageView fitHeight="336.0" fitWidth="490.0" opacity="0.45">
-         <image>
-            <Image url="@../../../../../../../../Downloads/download.jpg" />
-         </image>
-      </ImageView>
         <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
       <Button fx:id="btnSoma" layoutX="233.0" layoutY="60.0" mnemonicParsing="false" onAction="#soma" prefHeight="36.0" prefWidth="36.0" style="-fx-background-color: transparent; -fx-border-color: black;" text="+">
          <font>
